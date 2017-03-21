@@ -1,19 +1,18 @@
 #language:pt
-Funcionalidade: Buscando um produto
-
-  Cenario: Buscar Veiculo "Golf GTI 2014"
-
-  Dado que estou na pagina home do "mercadolivre.com",
-  Quando digitar o valor "Golf GTI 2014" no campo de busca,
-  E clicar no botao pesquisar,
-  #Entao deverá listar todos os produtos denominado com o valor.
 
 
-  Cenario: Buscando Veiculo "Golf GTI 2014" até 65.000 reais
+ Funcionalidade: Validar campos no site vilas boas
 
-  Dado que estou na pagina home do "mercadolivre.com",
-  Quando digitar o valor "Golf GTI 2014" no campo de busca,
-  E clicar no botao pesquisar,
-  E clicar no link "Até R$65.000" presente na tela,
 
-  
+   Cenario: preencher campos fields
+
+ Dado que estou na página "http://www.vilasboasit.com/tests.html"
+ E preencho o campo "YourFirstName" com "maria"
+ E preencho o campo "YourMidName" com "felicia"
+ E preencho o campo "YourLastName" com "santos"
+ E preencho o campo "YourAge" com "40"
+ E preencho o campo "YourEmail" com "teste@teste.com.br"
+ E preencho o campo "YourJob" com "advogada"
+ E preencho o campo "YourGender" com "feminino"
+ Quando clico no botão "reset_fields"
+ Então Todos os campos devem estar limpos
